@@ -1,0 +1,143 @@
+{
+    "drugs": [
+        {
+            "id": 1,
+            "name": "داروی ۱",
+            "price": 10000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 2,
+            "name": "داروی ۲",
+            "price": 15000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 3,
+            "name": "داروی ۳",
+            "price": 12000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 4,
+            "name": "داروی ۴",
+            "price": 18000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 5,
+            "name": "داروی ۵",
+            "price": 8000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 6,
+            "name": "داروی ۶",
+            "price": 11000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 7,
+            "name": "داروی ۷",
+            "price": 20000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 8,
+            "name": "داروی ۸",
+            "price": 9000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 9,
+            "name": "داروی ۹",
+            "price": 17000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 10,
+            "name": "داروی ۱۰",
+            "price": 13000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 11,
+            "name": "داروی ۱۱",
+            "price": 16000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 12,
+            "name": "داروی ۱۲",
+            "price": 14000,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 13,
+            "name": "داروی ۱۳",
+            "price": 15500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 14,
+            "name": "داروی ۱۴",
+            "price": 12500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 15,
+            "name": "داروی ۱۵",
+            "price": 17500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 16,
+            "name": "داروی ۱۶",
+            "price": 19500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 17,
+            "name": "داروی ۱۷",
+            "price": 11500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 18,
+            "name": "داروی ۱۸",
+            "price": 8500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 19,
+            "name": "داروی ۱۹",
+            "price": 10500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 20,
+            "name": "داروی ۲۰",
+            "price": 13500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 21,
+            "name": "داروی ۲۱",
+            "price": 14500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 22,
+            "name": "داروی ۲۲",
+            "price": 18500,
+            "image": "/images/drug.webp"
+        },
+        {
+            "id": 23,
+            "name": "داروی ۲۳",
+            "price": 7500,
+            "image": "/images/drug.webp"
+        },
+        { "id": 24, "name": "داروی ۲۴", "price": 16500 }
+    ]
+}
