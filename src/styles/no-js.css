@@ -73,31 +73,6 @@ a {
     text-decoration: none;
 }
 
-.drugs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-}
-
-@media (min-width: 640px) {
-    .drugs-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 768px) {
-    .drugs-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .drugs-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
