@@ -137,7 +137,6 @@
             "name": "داروی ۲۳",
             "price": 7500,
             "image": "/images/drug.webp"
-        },
-        { "id": 24, "name": "داروی ۲۴", "price": 16500 }
+        }
     ]
 }

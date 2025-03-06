@@ -47,6 +47,7 @@ const DrugCard: React.FC<DrugCardProps> = ({ drug }) => {
             </div>
             <button
                 onClick={handleAddToCart}
+                disabled={!process.browser}
                 className="bg-primary-500 hover:bg-[#1475d1] text-gray-50 w-full text-lg py-2 px-2 rounded rounded-tl-none rounded-tr-none mt-6 p-4 cursor-pointer transition duration-300"
             >
                 <span className="ml-1 font-bold">+</span>

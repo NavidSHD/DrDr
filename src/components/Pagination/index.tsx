@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 interface PaginationProps {
     currentPage: number;
@@ -7,22 +8,42 @@ interface PaginationProps {
 }
 
 const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages }) => {
-    const pages = [];
-    for (let i = 1; i <= totalPages; i++) {
-        pages.push(i);
-    }
+    const router = useRouter();
+    const visiblePages = 5;
+
+    const generatePages = () => {
+        let start = Math.max(1, currentPage - Math.floor(visiblePages / 2));
+        let end = Math.min(totalPages, start + visiblePages - 1);
+
+        if (end - start < visiblePages - 1) {
+            start = Math.max(1, end - visiblePages + 1);
+        }
+
+        return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+    };
+
     return (
         <div className="flex justify-center items-center text-sm space-x-2 my-4">
             {currentPage > 1 && (
-                <Link href={`/?page=${currentPage - 1}`}>
-                    <div className="px-3 py-1 border border-gray-300 rounded hover:bg-primary-500 hover:text-white transition">
+                <Link
+                    href={`/?drugs=${currentPage - 1}`}
+                    legacyBehavior
+                    prefetch={false}
+                >
+                    <a className="px-3 py-1 border border-gray-300 rounded hover:bg-primary-500 hover:text-white transition">
                         قبلی
-                    </div>
+                    </a>
                 </Link>
             )}
-            {pages.map((page) => (
-                <Link key={page} href={`/?page=${page}`}>
-                    <div
+
+            {generatePages().map((page) => (
+                <Link
+                    key={page}
+                    href={`/drugs/${page}`}
+                    legacyBehavior
+                    prefetch={false}
+                >
+                    <a
                         className={`px-3 py-1 border border-gray-300 rounded transition ${
                             page === currentPage
                                 ? "bg-primary-500 text-white"
@@ -30,14 +51,19 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages }) => {
                         }`}
                     >
                         {page}
-                    </div>
+                    </a>
                 </Link>
             ))}
+
             {currentPage < totalPages && (
-                <Link href={`/?page=${currentPage + 1}`}>
-                    <div className="px-3 py-1 border border-gray-300 rounded hover:bg-primary-500 hover:text-white transition">
+                <Link
+                    href={`/?drugs=${currentPage + 1}`}
+                    legacyBehavior
+                    prefetch={false}
+                >
+                    <a className="px-3 py-1 border border-gray-300 rounded hover:bg-primary-500 hover:text-white transition">
                         بعدی
-                    </div>
+                    </a>
                 </Link>
             )}
         </div>
